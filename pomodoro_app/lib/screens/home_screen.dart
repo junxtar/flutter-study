@@ -64,7 +64,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           Text(
                             "0",
                             style: TextStyle(
-                                fontSize: 50,
+                                fontSize: 40,
                                 fontWeight: FontWeight.w600,
                                 color: Theme.of(context)
                                     .textTheme
