@@ -17,13 +17,13 @@ class App extends StatelessWidget {
         body: SingleChildScrollView(
           child: Padding(
             padding: const EdgeInsets.symmetric(
-              horizontal: 10,
+              horizontal: 20,
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const SizedBox(
-                  height: 20,
+                  height: 50,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.end,
@@ -35,7 +35,7 @@ class App extends StatelessWidget {
                           "Hey, Selena",
                           style: TextStyle(
                               color: Colors.white,
-                              fontSize: 27,
+                              fontSize: 30,
                               fontWeight: FontWeight.w700),
                         ),
                         Text(
@@ -43,7 +43,7 @@ class App extends StatelessWidget {
                           style: TextStyle(
                             color: const Color.fromARGB(255, 255, 255, 255)
                                 .withOpacity(0.6),
-                            fontSize: 15,
+                            fontSize: 20,
                           ),
                         ),
                       ],
@@ -51,13 +51,13 @@ class App extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(
-                  height: 20,
+                  height: 40,
                 ),
                 Text(
                   "Total Balance",
                   style: TextStyle(
                     color: Colors.white.withOpacity(0.8),
-                    fontSize: 18,
+                    fontSize: 25,
                   ),
                 ),
                 const SizedBox(
@@ -67,11 +67,11 @@ class App extends StatelessWidget {
                   "\$ 5 194 482",
                   style: TextStyle(
                       color: Colors.white,
-                      fontSize: 30,
+                      fontSize: 40,
                       fontWeight: FontWeight.bold),
                 ),
                 const SizedBox(
-                  height: 15,
+                  height: 20,
                 ),
                 Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -88,7 +88,7 @@ class App extends StatelessWidget {
                       ),
                     ]),
                 const SizedBox(
-                  height: 40,
+                  height: 60,
                 ),
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.end,
@@ -98,7 +98,7 @@ class App extends StatelessWidget {
                       "Wallets",
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 25,
+                        fontSize: 35,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -106,13 +106,13 @@ class App extends StatelessWidget {
                       "View All",
                       style: TextStyle(
                         color: Colors.white54,
-                        fontSize: 15,
+                        fontSize: 20,
                       ),
                     ),
                   ],
                 ),
                 const SizedBox(
-                  height: 10,
+                  height: 20,
                 ),
                 const CurrencyCard(
                   name: "Eruo",
@@ -120,6 +120,7 @@ class App extends StatelessWidget {
                   amount: "6 428",
                   icon: Icons.euro_rounded,
                   isInverted: false,
+                  order: 0,
                 ),
                 Transform.translate(
                   offset: const Offset(0, -20),
@@ -129,6 +130,7 @@ class App extends StatelessWidget {
                     amount: "6 428",
                     icon: Icons.monetization_on,
                     isInverted: true,
+                    order: 1,
                   ),
                 ),
                 Transform.translate(
@@ -139,6 +141,7 @@ class App extends StatelessWidget {
                     amount: "9 231",
                     icon: Icons.biotech,
                     isInverted: false,
+                    order: 2,
                   ),
                 ),
               ],
